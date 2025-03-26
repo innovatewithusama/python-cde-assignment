@@ -1,4 +1,4 @@
-# # # Question 1
+# # # # Question 1
 
 vowels = set("aeiouAEIOU")
 user_input = input("Enter a string: ")
@@ -10,7 +10,7 @@ for letter in user_input:
 
 print(f"Number of vowels in the string: {vowel_count}")
 
-# # # Question 2
+# # # # Question 2
 
 user_input = input("Enter you complete name: ")
 
@@ -37,14 +37,14 @@ print(f"Total number in whitespaces: {whitespace}")
 
 
 
-# # # Question 3
+# # # # Question 3
 
 user_input = input("Please enter your name: ")
 
 new_string = user_input[-1] + user_input[1:-1] + user_input[0]
 print(new_string)
 
-# # # Question 4
+# # # # Question 4
 
 user_input = input("Please enter your name: ")
 
@@ -57,3 +57,14 @@ user_input = input("Please enter your full name: ")
 new_string = user_input[1:] + user_input[0]  
 print(new_string)
 
+
+# Question 6
+
+
+user_input = input("Please enter your first, middle and name: ")
+user_initials = user_input[0] + ". "
+
+for i in range(len(user_input)):
+    if user_input[i] == " ":
+        user_initials += user_input[i+1] + ". "
+print(f"user_initials: {user_initials}")
