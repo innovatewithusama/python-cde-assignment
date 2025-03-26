@@ -34,3 +34,12 @@ print(f"Total number in uppercase: {uppercase}")
 print(f"Total number in lowercase: {lowercase}")
 print(f"Total number in digits: {digits}")
 print(f"Total number in whitespaces: {whitespace}")
+
+
+
+# Question 3
+
+user_input = input("Please enter your name: ")
+
+new_string = user_input[-1] + user_input[1:-1] + user_input[0]
+print(new_string)
